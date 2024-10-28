@@ -1,10 +1,10 @@
-name: webservice-registry 
+name: gateway-service
 
 on:
   push:
     branches: [ main ]
     paths:
-      - 'webservice-registry/**'
+      - 'gateway-service/**'
 env:
   AZURE_CONTAINER_REGISTRY: ${{ secrets.AZURE_CONTAINER_REGISTRY }}
   IMAGE_NAME: myapp
